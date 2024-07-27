@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+
+</head>
+<body>
+<div class="div"> 
+    <h1 class="text"> Это моя собака Апи, полное имя Апельсинка. Она очень любит сидеть на диванах и обычно не пускает меня на кровать. Если хотите узнать о ней больше читайте вниз.
+    </h1>
+
+</div>
+
+<div class="div1">
+<h2 class="text1">
+    Она умеет делать разные трюки, может даже спрятаться под подушкой если попросят. Она очень любит мясо, за него сделает хоть сальто. Больше всего из своих игрушек ей нравится игрушка морковки.
+</h2> <video controls class="video" src="img/IMG_4841.mov" >
+</video> 
+</div>
+<div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+    <div class="swiper-slide"><img src="img/6DCBFB13-A552-4870-865D-7977D855D5AF.jpg"></div>
+    <div class="swiper-slide"><img src="img/8AAD8E12-D9D1-49F4-8FA6-C1AC03157297.jpeg"></div>
+    <div class="swiper-slide"><img src="img/557BE283-3AE1-4A1B-A07C-7B6C501148BC.jpg"></div>
+    <div class="swiper-slide">S<img src="img/DA116678-688E-4E1C-B5A3-2B3E03AF7DB5.jpeg"></div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+    </div>
+
+    <script src="main.js"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        cssMode: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+        },
+        mousewheel: true,
+        keyboard: true,
+        });
+    </script>
+
+</body>
+</html>
